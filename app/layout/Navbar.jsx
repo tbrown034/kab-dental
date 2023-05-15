@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className=" text-primary-content bg-primary navbar">
       <div className="navbar-start">
         <a className="text-xl normal-case btn btn-ghost">Keith Brown DDS</a>
       </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
           </label>
           <ul
             tabIndex={0}
-            className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+            className="p-2 mt-3 shadow bg-primary text-primary-content menu menu-compact dropdown-content rounded-box w-52"
           >
             <li>
               <Link href="/">About</Link>
@@ -92,8 +92,8 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="hidden space-x-1 lg:flex">
-          <a className="btn">Make an Appointment</a>
-          <a className="btn">Call us</a>
+          <a className="btn btn-primary ">Make an Appointment</a>
+          <a className="btn btn-primary">Call us</a>
         </div>
       </div>
     </div>

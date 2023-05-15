@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className="p-10 footer bg-base-200 text-base-contents">
+      <footer className="p-10 bg-primary footer text-primary-content">
         <div>
           <span className="footer-title">Contact</span>
 
@@ -28,7 +28,7 @@ export default function Footer() {
           <Link href="/">Personalized Care</Link>
         </div>
       </footer>
-      <footer className="px-10 py-4 border-t footer bg-base-200 text-base-content border-base-300">
+      <footer className="p-6 bg-primary text-primary-content footer ">
         <div className="items-center grid-flow-col">
           <p>
             © 2023 Keith Brown DDS FAGD <br />

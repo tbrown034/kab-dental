@@ -8,17 +8,24 @@ export default function Hero({ image, title, description }) {
           src={image}
           quality={100}
           alt="Hero Image"
-          className="opacity-50"
+          className="opacity-70"
           priority
           fill
           style={{ objectFit: "cover" }}
         />
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="text-center hero-content text-neutral-content dark:text">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">{title}</h1>
-            <p className="mb-5">{description}</p>
-            <button className="btn btn-primary">Get Started</button>
+        <div className="hero-overlay bg-opacity-80"></div>
+        <div className="hero-content ">
+          <div className="max-w-4xl">
+            <h1 className="mb-5 text-5xl font-bold text-primary-content">
+              {title}
+            </h1>
+            <p className="mb-5 text-lg font-bold text-neutral-content">
+              {description}
+            </p>
+            <div className="flex space-x-2">
+              <button className=" btn-primary btn">Make an Appoitnment</button>
+              <button className=" btn-primary btn">Call Us Now</button>
+            </div>
           </div>
         </div>
       </div>
