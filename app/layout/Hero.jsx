@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Hero({ image, title, description }) {
+export default function Hero({ image, title, subtitle }) {
   return (
     <>
       <div className="relative overflow-hidden min-h-75vh hero">
@@ -20,10 +20,12 @@ export default function Hero({ image, title, description }) {
               {title}
             </h1>
             <p className="mb-5 text-lg font-bold text-neutral-content">
-              {description}
+              {subtitle}
             </p>
             <div className="flex space-x-2">
-              <button className=" btn-primary btn">Make an Appoitnment</button>
+              <button className=" btn-primary btn round">
+                Make an Appoitnment
+              </button>
               <button className=" btn-primary btn">Call Us Now</button>
             </div>
           </div>

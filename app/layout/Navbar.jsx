@@ -3,7 +3,9 @@ export default function Navbar() {
   return (
     <div className=" text-primary-content bg-primary navbar">
       <div className="navbar-start">
-        <a className="text-xl normal-case btn btn-ghost">Keith Brown DDS</a>
+        <Link href="/" className="text-xl normal-case btn btn-ghost">
+          Keith Brown DDS
+        </Link>
       </div>
       <div className="hidden navbar-center lg:flex">
         <ul className="px-1 menu menu-horizontal">
@@ -22,7 +24,8 @@ export default function Navbar() {
           <li>
             <Link href="/faqs">FAQs</Link>
           </li>
-          <li tabIndex={0}>
+
+          <li className="dropdown dropdown-content" tabIndex={0}>
             <a>
               Services
               <svg
@@ -35,15 +38,15 @@ export default function Navbar() {
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
             </a>
-            <ul className="p-2">
+            <ul className="p-2 mt-3 shadow bg-primary text-primary-content menu menu-compact dropdown-content rounded-box w-52">
               <li>
-                <Link href="/services">General Dentistry</Link>
+                <Link href="/dental-services">General Dentistry</Link>
               </li>
               <li>
-                <Link href="/services">Cosmetic Dentistry</Link>
+                <Link href="/dental-services">Cosmetic Dentistry</Link>
               </li>
               <li>
-                <Link href="/services">Surgical Dentistry</Link>
+                <Link href="/dental-services">Surgical Dentistry</Link>
               </li>
             </ul>
           </li>
@@ -72,28 +75,32 @@ export default function Navbar() {
             className="p-2 mt-3 shadow bg-primary text-primary-content menu menu-compact dropdown-content rounded-box w-52"
           >
             <li>
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/">Financing</Link>
+              <Link href="/financing">Financing</Link>
             </li>
             <li>
-              <Link href="/">Location</Link>
+              <Link href="/location">Location</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
             <li>
-              <Link href="/">FAQs</Link>
+              <Link href="/faqs">FAQs</Link>
             </li>
             <li>
-              <Link href="/">Services</Link>
+              <Link href="/dental-services">Services</Link>
             </li>
           </ul>
         </div>
         <div className="hidden space-x-1 lg:flex">
-          <a className="btn btn-primary ">Make an Appointment</a>
-          <a className="btn btn-primary">Call us</a>
+          <Link href="/appointment" className="btn btn-primary ">
+            Make an Appointment
+          </Link>
+          <Link href="/contact" className="btn btn-primary">
+            Call us
+          </Link>
         </div>
       </div>
     </div>
