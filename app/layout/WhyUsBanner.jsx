@@ -1,8 +1,9 @@
+import Link from "next/link";
 export default function WhyUsBanner() {
   const data = [
     {
       id: 1,
-      icon: "user md",
+      icon: "medical_services",
       title: "40+ Years of Experience",
       buttonText: "Meet Dr. Brown, D.D.S., F.A.G.D.",
       path: "/about",
@@ -16,14 +17,14 @@ export default function WhyUsBanner() {
     },
     {
       id: 3,
-      icon: "money bill alternate outline",
+      icon: "account_balance",
       title: "Affordable Care",
       buttonText: "Check Your Financing Options",
       path: "/financing",
     },
     {
       id: 4,
-      icon: "heartbeat",
+      icon: "business",
       title: "State of the Art Facilities",
       buttonText: "Take a Tour of our Office",
       path: "/location",
@@ -32,14 +33,17 @@ export default function WhyUsBanner() {
 
   return (
     <>
-      <div className="p-4 text-center min-h-25vh bg-secondary">
-        <h1>The Dental Difference: Extracting the Best in Care</h1>
-        <div className="grid grid-cols-4 gap-2 ">
-          <div>
-            <div>
-              <span className="material-icons">emergency</span>
+      <div className="p-4 text-center bg-secondary">
+        <div className="grid gap-2 lg:grid-cols-4 ">
+          {data.map((item) => (
+            <div key={item.id}>
+              <span className="material-icons">{item.icon}</span>
+              <p>{item.title}</p>
+              <Link href={item.path} className="btn btn-primary">
+                {item.buttonText}
+              </Link>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </>
