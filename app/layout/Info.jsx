@@ -1,14 +1,12 @@
 import Image from "next/image";
-import photo1 from "../../public/images/kabddsPatient1.jpg";
-import photo2 from "../../public/images/kabddsPatient2.jpg";
 
-export default function Info() {
+export default function Info({ Image1, Image2 }) {
   return (
     <>
-      <div className=" bg-secondary">
-        <div className="grid grid-cols-2">
-          <Image src={photo1}></Image>
-          <Image src={photo2}></Image>
+      <div className="bg-secondary">
+        <div className="grid gap-4 lg:grid-cols-2">
+          <Image src={Image1}></Image>
+          <Image src={Image2}></Image>
         </div>
       </div>
     </>

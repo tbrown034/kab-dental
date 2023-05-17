@@ -1,6 +1,7 @@
 import Hero from "../layout/Hero";
 import photo from "../../public/images/insurance.jpeg";
 import WhyUsBanner from "../layout/WhyUsBanner";
+import Info from "../layout/Info";
 
 export default function Financing() {
   return (
@@ -13,6 +14,7 @@ export default function Financing() {
         needs and budget."
       />
       <WhyUsBanner />
+      <Info />
     </div>
   );
 }
