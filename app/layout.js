@@ -13,6 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html data-theme="business" lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
