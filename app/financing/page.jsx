@@ -1,5 +1,6 @@
 import Hero from "../layout/Hero";
 import photo from "../../public/images/insurance.jpeg";
+import WhyUsBanner from "../layout/WhyUsBanner";
 
 export default function Financing() {
   return (
@@ -11,6 +12,7 @@ export default function Financing() {
         We can also assist you in finding a financing program tailored to your
         needs and budget."
       />
+      <WhyUsBanner />
     </div>
   );
 }

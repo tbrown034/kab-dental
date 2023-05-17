@@ -1,5 +1,6 @@
 import Hero from "../layout/Hero";
 import photo from "../../public/images/kabddsTeeth2.jpg";
+import WhyUsBanner from "../layout/WhyUsBanner";
 
 export default function Contact() {
   return (
@@ -12,6 +13,7 @@ export default function Contact() {
         questions or anything on how we can make your visit go as pleasently
         as possible!"
       />
+      <WhyUsBanner />
     </div>
   );
 }

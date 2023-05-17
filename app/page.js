@@ -1,6 +1,7 @@
 import Hero from "./layout/Hero";
 import dentist from "../public/images/kabddsToothbrush.jpg";
 import WhyUsBanner from "./layout/WhyUsBanner";
+import Info from "./layout/Info";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         subtitle="Dr. Keith A. Brown, D.D.S., F.A.G.D., has been serving Naperville and the Chicagoland area for more than 40 years. Schedule a cleaning or appointment today!"
       />
       <WhyUsBanner />
+      <Info />
     </div>
   );
 }

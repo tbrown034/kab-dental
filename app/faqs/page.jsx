@@ -1,6 +1,6 @@
 import Hero from "../layout/Hero";
 import photo from "../../public/images/kabddsPatient5.jpg";
-
+import WhyUsBanner from "../layout/WhyUsBanner";
 export default function FAQs() {
   return (
     <div>
@@ -11,6 +11,7 @@ export default function FAQs() {
         We can also assist you in finding a financing program tailored to
         your needs and budget."
       />
+      <WhyUsBanner />
     </div>
   );
 }
