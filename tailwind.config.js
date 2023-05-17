@@ -11,6 +11,10 @@ module.exports = {
         "75vh": "75vh",
         "25vh": "25vh",
       },
+      screens: {
+        xs: "374px", // Your custom breakpoint
+        // rest of the breakpoints remain the same
+      },
     },
   },
   plugins: [require("daisyui")],

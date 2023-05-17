@@ -5,7 +5,7 @@ export default function WhyUsBanner() {
       id: 1,
       icon: "medical_services",
       title: "40+ Years of Experience",
-      buttonText: "Meet Dr. Brown, D.D.S., F.A.G.D.",
+      buttonText: "Meet Dr. Brown",
       path: "/about",
     },
     {
@@ -19,7 +19,7 @@ export default function WhyUsBanner() {
       id: 3,
       icon: "account_balance",
       title: "Affordable Care",
-      buttonText: "Check Your Financing Options",
+      buttonText: "Your Financing Options",
       path: "/financing",
     },
     {
@@ -33,13 +33,16 @@ export default function WhyUsBanner() {
 
   return (
     <>
-      <div className="p-4 text-center bg-secondary">
-        <div className="grid gap-2 lg:grid-cols-4 ">
+      <div className="p-4 text-center bg-primary text-primary-content">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {data.map((item) => (
-            <div key={item.id}>
+            <div
+              className="p-4 border-b-2 lg:border-r-2 lg:border-b-0 sm:border-b-0"
+              key={item.id}
+            >
               <span className="material-icons">{item.icon}</span>
-              <p>{item.title}</p>
-              <Link href={item.path} className="btn btn-primary">
+              <p className="p-2">{item.title}</p>
+              <Link href={item.path} className="btn btn-accent">
                 {item.buttonText}
               </Link>
             </div>
