@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
-import WhyUsBanner from "./layout/WhyUsBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html data-theme="business" lang="en">
+    <html data-theme="garden" lang="en">
       <head>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
