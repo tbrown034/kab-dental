@@ -35,7 +35,9 @@ export default function WhyUsSection() {
     <>
       <section className=" p-14 bg-secondary text-secondary-content">
         <div className="px-2 text-center lg:px-14">
-          <h2 className="font-semibold text-indigo-600">Why Choose Us</h2>
+          <h2 className="font-semibold text-accent-content ">
+            Your Partner in Dental Health
+          </h2>
           <p className="mt-2 text-4xl font-bold ">
             The Dental Difference: Extracting the Best in Care
           </p>
@@ -45,9 +47,9 @@ export default function WhyUsSection() {
             Schedule a cleaning or appoitnment today!
           </p>
         </div>
-        <div className="grid gap-4 mt-8 grid-cols2">
-          <Image src={photo1}></Image>
-          <Image src={photo2}></Image>
+        <div className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-2">
+          <Image src={photo1} alt="doctor looking at images"></Image>
+          <Image src={photo2} alt="dentist treating patient"></Image>
         </div>
 
         <div className="mt-16">
@@ -57,7 +59,7 @@ export default function WhyUsSection() {
                 <dt className="text-base font-semibold leading-7 ">
                   <div className="absolute top-0 left-0 flex items-center justify-center w-10 h-10 rounded-lg">
                     <span
-                      className="text-indigo-600 material-icons"
+                      className="text-accent-content material-icons"
                       aria-hidden="true"
                     >
                       {feature.icon}
