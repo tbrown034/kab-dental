@@ -7,10 +7,10 @@ import cosmeticPhoto from "../../public/images/kabddsPatient2.jpg";
 export default function ServicesSection() {
   return (
     <>
-      <section className="p-4 bg-primary text-primary-content ">
+      <section className="p-14 bg-primary text-primary-content ">
         <div className="px-2 text-center">
           <p className="mt-2 text-4xl font-bold ">
-            The Dental Difference: Extracting the Best in Care
+            A Full Service Dental Office
           </p>
           <p className="mt-4 text-lg ">
             We provide a range of dental services to take the best care of you

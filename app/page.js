@@ -3,7 +3,7 @@ import dentist from "../public/images/kabddsToothbrush.jpg";
 import WhyUsSection from "../app/home/WhyUsSection.jsx";
 import ServicesSection from "../app/home/ServicesSection.jsx";
 import MapSection from "../app/home/MapSection.jsx";
-import Features from "./components/features";
+import ContactForm from "../app/components/ContactForm.jsx";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <WhyUsSection />
       <ServicesSection />
       <MapSection />
-      <Features />
+      <ContactForm />
     </div>
   );
 }
