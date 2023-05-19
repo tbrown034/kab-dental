@@ -1,3 +1,7 @@
+import photo1 from "../../public/images/kabddsDentist1.jpg";
+import photo2 from "../../public/images/kabddsDentist2.jpg";
+import Image from "next/image";
+
 const features = [
   {
     name: "40+ Years of Experience",
@@ -26,30 +30,36 @@ const features = [
   },
 ];
 
-export default function Features() {
+export default function WhyUsSection() {
   return (
-    <div className="py-24 bg-secondary sm:py-32">
-      <div className="px-6 mx-auto max-w-7xl lg:px-8">
-        <div className="max-w-2xl mx-auto lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Why You Should Choose Us
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <>
+      <section className=" p-14 bg-secondary text-secondary-content">
+        <div className="px-2 text-center lg:px-14">
+          <h2 className="font-semibold text-indigo-600">Why Choose Us</h2>
+          <p className="mt-2 text-4xl font-bold ">
             The Dental Difference: Extracting the Best in Care
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Dr. Keith A. Brown, D.D.S., F.A.G.D., has been serving Naperville
-            and the Chicagoland area for more than 40 years. Schedule a cleaning
-            or appointment today!
+          <p className="mt-4 text-lg ">
+            Keith Brown, DDS FAGD, is an experienced and trusted dentist who
+            serves Naperville, Auroura and the Greater Chicagoland Areas.
+            Schedule a cleaning or appoitnment today!
           </p>
         </div>
-        <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div className="grid gap-4 mt-8 grid-cols2">
+          <Image src={photo1}></Image>
+          <Image src={photo2}></Image>
+        </div>
+
+        <div className="mt-16">
+          <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
+              <div key={feature.name} className="relative pl-16 ">
+                <dt className="text-base font-semibold leading-7 ">
                   <div className="absolute top-0 left-0 flex items-center justify-center w-10 h-10 rounded-lg">
-                    <span className="w-6 h-6 material-icons" aria-hidden="true">
+                    <span
+                      className="text-indigo-600 material-icons"
+                      aria-hidden="true"
+                    >
                       {feature.icon}
                     </span>
                   </div>
@@ -62,7 +72,7 @@ export default function Features() {
             ))}
           </dl>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
