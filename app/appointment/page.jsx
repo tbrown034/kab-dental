@@ -9,6 +9,7 @@ export default function Appointment() {
         image={photo}
         title="Schedule Your Next Appointment"
         subtitle="We are excited to see and help assist you. Your journey to a healthier, brighter smile starts today!"
+        alt="altphoto"
       />
       <WhyUsBanner />
     </div>

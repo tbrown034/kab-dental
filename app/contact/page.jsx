@@ -12,6 +12,7 @@ export default function Contact() {
         our office, what services we provice, financing or insurance
         questions or anything on how we can make your visit go as pleasently
         as possible!"
+        alt="altphoto"
       />
       <WhyUsBanner />
     </div>

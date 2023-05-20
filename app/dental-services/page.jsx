@@ -10,6 +10,7 @@ export default function Services() {
         title="We'll Take Care of Your Teeth"
         subtitle="Our goal is to have your teeth looking great and free of pain or
         discomfort in as short a time as possible."
+        alt="altphoto"
       />
       <WhyUsBanner />
     </div>

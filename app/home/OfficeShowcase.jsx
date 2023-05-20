@@ -4,7 +4,7 @@ import topPhoto from "../../public/images/bank.jpeg";
 import photo1 from "../../public/images/kabddsOffice1.jpg";
 import photo2 from "../../public/images/kabddsOffice2.jpg";
 import photo3 from "../../public/images/kabddsOffice3.jpg";
-import photo4 from "../../public/images/reception.jpeg";
+import photo4 from "../../public/images/Reception.jpeg";
 
 export default function OfficeShowcase() {
   return (
