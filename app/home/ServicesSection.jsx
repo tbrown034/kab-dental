@@ -7,7 +7,7 @@ import cosmeticPhoto from "../../public/images/kabddsPatient2.jpg";
 export default function ServicesSection() {
   return (
     <>
-      <section className="p-14 bg-primary text-primary-content ">
+      <section className="p-24 bg-primary text-primary-content ">
         <div className="px-2 text-center">
           <p className="mt-2 text-4xl font-bold ">
             A Full Service Dental Office
@@ -25,7 +25,7 @@ export default function ServicesSection() {
             <span className="material-icons">chevron_right</span>
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-4 py-8 lg:grid-cols-3 ">
+        <div className="grid grid-cols-1 gap-10 py-8 lg:grid-cols-3 ">
           <div className="transition-transform duration-200 transform rounded-lg shadow-2xl hover:scale-105 card bg-secondary text-secondary-content">
             <figure>
               <Image src={generalPhoto} alt="alt text"></Image>

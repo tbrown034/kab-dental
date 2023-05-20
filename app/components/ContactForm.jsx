@@ -3,17 +3,34 @@ export default function ServicesSection() {
     <>
       <section className="p-4 bg-primary text-primary-content ">
         <div className="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center">
             Contact Us
           </h2>
-          <p className="mb-8 font-light text-center text-secondary lg:mb-16 dark:text-gray-400 sm:text-xl">
-            Got a technical issue? Want to send feedback about a beta feature?
-            Need details about our Business plan? Let us know.
+          <p className="mb-8 font-light text-center text-secondary lg:mb-16 sm:text-xl">
+            We understand that going to the dentist's office can be a stressful
+            and confusing experience for some. That's why we are committed to
+            answering all your questions before, during and after your visit!
+            Let us know how we can help!
           </p>
           <form action="#" className="space-y-8">
             <div>
               <label
-                for="email"
+                htmlFor="name"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Name
+              </label>
+              <input
+                type="name"
+                id="name"
+                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Your Name"
+                required
+              ></input>
+            </div>
+            <div>
+              <label
+                htmlFor="email"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Your email
@@ -22,13 +39,13 @@ export default function ServicesSection() {
                 type="email"
                 id="email"
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="name@flowbite.com"
+                placeholder="name@gmail.com"
                 required
               ></input>
             </div>
             <div>
               <label
-                for="subject"
+                htmlFor="subject"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Subject
@@ -41,9 +58,24 @@ export default function ServicesSection() {
                 required
               ></input>
             </div>
+            <div>
+              <label
+                htmlFor="name"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="(###) ###-####"
+                required
+              ></input>
+            </div>
             <div className="sm:col-span-2">
               <label
-                for="message"
+                htmlFor="message"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
               >
                 Your message
@@ -55,10 +87,7 @@ export default function ServicesSection() {
                 placeholder="Leave a comment..."
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-            >
+            <button type="submit" className="p-2 rounded-md btn-secondary">
               Send message
             </button>
           </form>

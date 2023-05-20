@@ -1,9 +1,10 @@
 import Map from "../components/Map";
+import Link from "next/link";
 
 export default function MapSection() {
   return (
     <>
-      <section className="p-14 bg-secondary text-secondary-content">
+      <section className="p-24 bg-secondary text-secondary-content">
         <div className="px-2 text-center lg:px-14">
           <h2 className="font-semibold text-accent-content">Our Location</h2>
           <p className="mt-2 text-4xl font-bold">
@@ -18,6 +19,11 @@ export default function MapSection() {
         </div>
         <div className="mt-8">
           <Map />
+        </div>
+        <div className="grid grid-cols-1 gap-4 pt-6 lg:grid-cols-3">
+          <button className="btn btn-primary">Get Directions</button>
+          <button className="btn btn-primary">Copy Address</button>
+          <button className="btn btn-primary">Copy Address</button>
         </div>
       </section>
     </>
