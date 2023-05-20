@@ -8,7 +8,7 @@ export default function TestimonialSection() {
           <h2 className="font-semibold text-accent-content ">
             Hear Directly From Our Patients
           </h2>
-          <p className="mt-2 text-4xl font-bold ">
+          <p className="mt-2 text-3xl font-bold ">
             Don't Just Take Our Word For It
           </p>
         </div>
