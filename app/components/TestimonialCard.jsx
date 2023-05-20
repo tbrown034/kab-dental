@@ -16,28 +16,33 @@ export default function TestimonialCard() {
                 type="radio"
                 name="rating-2"
                 className="bg-primary-content mask mask-star-2"
+                readOnly
               />
               <input
                 type="radio"
                 name="rating-2"
                 className="bg-primary-content mask mask-star-2"
                 checked
+                readOnly
               />
               <input
                 type="radio"
                 name="rating-2"
                 className="bg-primary-content mask mask-star-2"
+                readOnly
               />
               <input
                 type="radio"
                 name="rating-2"
                 className="bg-primary-content mask mask-star-2"
+                readOnly
               />
               <input
                 type="radio"
                 name="rating-2"
                 className="bg-primary-content mask mask-star-2"
                 checked
+                readOnly
               />
             </div>
             <p className="mt-4 text-lg font-bold text-accent-content">
