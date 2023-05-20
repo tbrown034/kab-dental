@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function MapSection() {
   return (
     <>
-      <section className="p-24 bg-secondary text-secondary-content">
+      <section className="px-10 py-20 lg:px-20 bg-secondary text-secondary-content">
         <div className="px-2 text-center lg:px-14">
           <h2 className="font-semibold text-accent-content">Our Location</h2>
           <p className="mt-2 text-4xl font-bold">

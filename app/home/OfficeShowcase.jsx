@@ -9,7 +9,7 @@ import photo4 from "../../public/images/Reception.jpeg";
 export default function OfficeShowcase() {
   return (
     <>
-      <section className="p-24 bg-secondary text-secondary-content">
+      <section className="px-10 py-20 lg:px-20 bg-secondary text-secondary-content">
         <div className="px-2 text-center">
           <h2 className="font-semibold text-accent-content ">
             Anxiety-Free Dental Care
