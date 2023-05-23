@@ -2,6 +2,7 @@ import Hero from "../layout/Hero";
 import photo from "../../public/images/kabddsDentist2.jpg";
 import WhyUsBanner from "../layout/WhyUsBanner";
 import Introduction from "./Introduction";
+import Fellow from "./Fellow";
 
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
         alt="altphoto"
       />
       <Introduction />
+      <Fellow />
     </div>
   );
 }

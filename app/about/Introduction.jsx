@@ -21,7 +21,8 @@ export default function Introduction() {
             </div>
 
             <p className="text-lg font-bold ">Keith Brown DDS FAGD</p>
-            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <hr className="my-4 border-2 rounded-lg w-14 border-cyan-800" />
+
             <ul className="flex flex-col list-disc list-inside">
               <li>
                 <span className="font-bold"> Education: </span>
