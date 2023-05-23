@@ -1,7 +1,6 @@
 import Hero from "../layout/Hero";
 import photo from "../../public/images/kabddsToothbrush2.jpg";
-import WhyUsBanner from "../layout/WhyUsBanner";
-
+import ServicesOverview from "./ServicesOverview";
 export default function Services() {
   return (
     <div>
@@ -12,7 +11,7 @@ export default function Services() {
         discomfort in as short a time as possible."
         alt="altphoto"
       />
-      <WhyUsBanner />
+      <ServicesOverview />
     </div>
   );
 }
