@@ -7,7 +7,7 @@ import cosmeticPhoto from "../../public/images/kabddsPatient2.jpg";
 export default function ServicesSection() {
   return (
     <>
-      <section className="px-8 py-10 lg:px-20 bg-primary text-primary-content ">
+      <section className="flex flex-col items-center justify-center min-h-screen px-8 py-12 lg:px-20 bg-primary text-primary-content ">
         <div className="px-2 text-center">
           <p className="mt-2 text-4xl font-bold ">
             A Full Service Dental Office

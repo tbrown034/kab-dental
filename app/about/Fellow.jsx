@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Fellow() {
   return (
     <>
-      <section className="flex flex-col items-center justify-center gap-8 px-8 py-20 text-center bg-primary text-secondary-content">
+      <section className="flex flex-col items-center justify-center gap-8 px-8 py-20 text-center min-h-75vh bg-primary text-secondary-content">
         <h2 className="text-5xl font-semibold text-accent-content">
           Did You Know?
         </h2>
