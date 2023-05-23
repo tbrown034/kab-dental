@@ -3,7 +3,7 @@ import photo from "../../public/images/keith2.jpeg";
 export default function Introduction() {
   return (
     <>
-      <section className="flex flex-col items-center justify-center min-h-screen px-8 lg:px-20 bg-secondary text-secondary-content">
+      <section className="flex flex-col items-center justify-center px-8 min-h-75vh lg:px-20 bg-secondary text-secondary-content">
         <div className="px-2 text-center lg:px-14">
           <h2 className="font-semibold text-accent-content ">
             Meet Your Next Dentist

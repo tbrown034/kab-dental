@@ -6,10 +6,10 @@ export default function Fellow() {
   return (
     <>
       <section className="flex flex-col items-center justify-center gap-8 px-8 py-20 text-center min-h-75vh bg-primary text-secondary-content">
-        <h2 className="text-5xl font-semibold text-accent-content">
+        <h2 className="text-4xl font-semibold text-accent-content">
           Did You Know?
         </h2>
-        <p className="text-2xl">
+        <p className="text-xl">
           Dr. Brown is among the{" "}
           <span className="font-bold text-accent-content">six percent</span> of
           U.S. dentists who have earned the prestigious{" "}
@@ -20,7 +20,7 @@ export default function Fellow() {
           it.
         </p>
         <div className="relative p-6 bg-secondary-content rounded-xl text-primary-content">
-          <blockquote className="relative text-2xl font-bold lg:text-4xl">
+          <div className="relative text-4xl ">
             "If your dentist is a <span className="text-accent">Fellow </span>
             or Master of the Academy of General Dentistry, they are the{" "}
             <span className="text-accent">best of the best in the field</span>.
@@ -30,7 +30,7 @@ export default function Fellow() {
             year —{" "}
             <span className=" text-accent">not every dentist does this</span>
             ."
-          </blockquote>
+          </div>
           <div className="flex flex-col items-center justify-center gap-4 pt-8">
             <p className="text-lg text-accent">
               Source:{" "}
